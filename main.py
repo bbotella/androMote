@@ -18,7 +18,6 @@ def random_id():
   return rid
 
 def message_callback(session, message):
-  print 'Recibo'
   global unacked_messages_quota
   gcm = message.getTags('gcm')
   if gcm:
@@ -32,9 +31,10 @@ def message_callback(session, message):
       # Queue a response back to the server.
       if msg.has_key('from'):
         # Send a dummy echo response back to the app that sent the upstream message.
+        print msg['data']['message']
         send_queue.append({'to': msg['from'],
                            'message_id': random_id(),
-                           'data': {'pong': 1}})
+                           'data': {'server_message': '{"operation_type": "mote", operation": "ack", "parameters":{}}'}})
     elif msg['message_type'] == 'ack' or msg['message_type'] == 'nack':
       unacked_messages_quota += 1
 
@@ -49,8 +49,7 @@ def flush_queued_messages():
     send(send_queue.pop(0))
     unacked_messages_quota -= 1
 
-
-client = xmpp.Client('gcm.googleapis.com', debug=['socket'])
+client = xmpp.Client('gcm.googleapis.com', debug=[])
 client.connect(server=(SERVER,PORT), secure=1, use_srv=False)
 auth = client.auth(USERNAME, PASSWORD)
 if not auth:
@@ -61,7 +60,7 @@ client.RegisterHandler('message', message_callback)
 
 send_queue.append({'to': REGISTRATION_ID,
                    'message_id': 'reg_id',
-                   'data': {'message_destination': 'RegId',
+                   'data': {'server_message': '{"operation_type": "mote", operation": "getBattery", "parameters":{}}', 'message_destination': 'RegId',
                             'message_id': random_id()}})
 
 while True:
