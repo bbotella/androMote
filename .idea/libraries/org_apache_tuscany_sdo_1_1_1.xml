@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="org.apache.tuscany.sdo_1.1.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/AndroMote/libs/org.apache.tuscany.sdo_1.1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
