@@ -9,6 +9,7 @@ import com.google.android.gms.gcm.GoogleCloudMessaging;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * Created by bbotella on 21/08/13.
@@ -34,12 +35,16 @@ public class MessageSender {
             protected String doInBackground(ArrayList<String>... params) {
                 String msg = "";
                 try {
+                    ArrayList<String> passed = params[0];
                     Bundle data = new Bundle();
-                    data.putString("message", params);
+                    data.putString("message", passed.get(1));
                     //data.putString("my_action", "com.google.android.gcm.demo.app.ECHO_NOW");
-                    String id = Integer.toString(msgId.incrementAndGet());
+                    Random rnd = new Random();
+                    rnd.setSeed(System.currentTimeMillis());
+                    int rnd_id = rnd.nextInt();
+                    String id = Integer.toString(rnd_id);
                     Log.d(TAG, "The message id is: " + id);
-                    gcm.send(params[0] + "@gcm.googleapis.com", id, data);
+                    gcm.send(passed.get(0) + "@gcm.googleapis.com", id, data);
                     msg = "Sent message";
                 } catch (IOException ex) {
                     msg = "Error :" + ex.getMessage();
@@ -48,9 +53,9 @@ public class MessageSender {
             }
 
             @Override
-            protected void onPostExecute(String msg) {
+            protected void onPostExecute(String result) {
                 //mDisplay.append(msg + "\n");
             }
-        }.execute(passing, null, null);
+        }.execute(passing);
     }
 }

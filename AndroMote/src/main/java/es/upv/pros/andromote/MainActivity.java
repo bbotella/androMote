@@ -20,6 +20,8 @@ import com.google.android.gms.gcm.GoogleCloudMessaging;
 import java.io.IOException;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import es.upv.pros.andromote.gcmcommunication.MessageSender;
+
 public class MainActivity extends Activity {
 
     public static final String EXTRA_MESSAGE = "message";
@@ -69,29 +71,8 @@ public class MainActivity extends Activity {
         sendButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new AsyncTask<Void, Void, String>() {
-                    @Override
-                    protected String doInBackground(Void... params) {
-                        String msg = "";
-                        try {
-                            Bundle data = new Bundle();
-                            data.putString("message", "Hello World2");
-                            //data.putString("my_action", "com.google.android.gcm.demo.app.ECHO_NOW");
-                            String id = Integer.toString(msgId.incrementAndGet());
-                            Log.d(TAG, "The message id is: " + id);
-                            gcm.send(SENDER_ID + "@gcm.googleapis.com", id, data);
-                            msg = "Sent message";
-                        } catch (IOException ex) {
-                            msg = "Error :" + ex.getMessage();
-                        }
-                        return msg;
-                    }
-
-                    @Override
-                    protected void onPostExecute(String msg) {
-                        mDisplay.append(msg + "\n");
-                    }
-                }.execute(null, null, null);
+                MessageSender sender = new MessageSender(SENDER_ID, "Hello from class", context);
+                sender.sendMessage();
             }
         });
 

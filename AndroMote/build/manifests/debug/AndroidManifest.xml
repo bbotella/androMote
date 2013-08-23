@@ -27,7 +27,7 @@
             </intent-filter>
         </receiver>
 
-        <service android:name="es.upv.pros.andromote.services.MessageHandlerIntentService" android:process=":MessageHandlerIntentService"/>
+        <service android:name="es.upv.pros.andromote.services.MessageHandlerIntentService"/>
 
     </application>
 

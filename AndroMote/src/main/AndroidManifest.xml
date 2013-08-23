@@ -41,8 +41,7 @@
             </intent-filter>
         </receiver>
 
-        <service android:name=".services.MessageHandlerIntentService"
-                 android:process=":MessageHandlerIntentService" />
+        <service android:name=".services.MessageHandlerIntentService" />
 
     </application>
 

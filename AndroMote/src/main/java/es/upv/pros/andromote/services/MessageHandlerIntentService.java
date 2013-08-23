@@ -17,6 +17,7 @@ import org.json.JSONObject;
 
 import es.upv.pros.andromote.MainActivity;
 import es.upv.pros.andromote.R;
+import es.upv.pros.andromote.agenthandlers.MoteHandler;
 import es.upv.pros.andromote.broadcastreceivers.AgentBroadcastReceiver;
 import es.upv.pros.andromote.jsonclassess.ServerPayload;
 
@@ -26,12 +27,19 @@ import es.upv.pros.andromote.jsonclassess.ServerPayload;
 public class MessageHandlerIntentService extends IntentService {
     public static final int NOTIFICATION_ID = 1;
     private NotificationManager mNotificationManager;
-    NotificationCompat.Builder builder;
+    Context context;
 
     static final String TAG = "AndroMote";
 
     public MessageHandlerIntentService() {
         super("MessageHandlerIntentService");
+
+    }
+
+    @Override
+    public void onCreate(){
+        super.onCreate();
+        this.context = getApplicationContext();
     }
 
     @Override
@@ -64,7 +72,7 @@ public class MessageHandlerIntentService extends IntentService {
                     Log.i(TAG, "Working... " + (i + 1)
                             + "/5 @ " + SystemClock.elapsedRealtime());
                     try {
-                        Thread.sleep(5000);
+                        Thread.sleep(50);
                     } catch (InterruptedException e) {
                     }
                 }
@@ -73,7 +81,8 @@ public class MessageHandlerIntentService extends IntentService {
                 String server_message = extras.getString("server_message", "ERROR");
                 ServerPayload payload = new ServerPayload(server_message);
                 if(payload.getOperation_type().equals("mote")){
-
+                    MoteHandler moteHandler = new MoteHandler(payload, context);
+                    moteHandler.handleMessage();
                 }
                 //sendNotification(server_message);
                 try {

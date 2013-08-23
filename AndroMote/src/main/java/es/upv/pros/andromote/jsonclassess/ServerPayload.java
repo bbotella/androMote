@@ -17,7 +17,7 @@ public class ServerPayload {
     public ServerPayload (String stringPayload){
         try {
             JSONObject jsonPayload = new JSONObject(stringPayload);
-            this.operation_type = jsonPayload.getString("operation_payload");
+            this.operation_type = jsonPayload.getString("operation_type");
             this.operation = jsonPayload.getString("operation");
             JSONArray arrayParams = jsonPayload.getJSONArray("parameters");
             this.parameters = new ArrayList<ServerParameter>();
