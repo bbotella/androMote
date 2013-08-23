@@ -6,7 +6,7 @@ SERVER = 'gcm.googleapis.com'
 PORT = 5235
 USERNAME = '84815785587'
 PASSWORD = 'AIzaSyCu4GJ5fW9iJ9sYRg9jQTiqCTJWFiZt914'
-REGISTRATION_ID = 'APA91bGEUruxSMZPV_wZtZuP_qlF4tC1qr-15s_Wtuch7iRiQpvFiO3w55sG6VM6EfvnPWc3CeApMc_q-KnFo1c3nGCDdbn0VAgMdevEC9Vq-XVeHSYpYSjBZshsI6L0qUFXCpJAzbBKg3XO17awxSPlLI_bQkrFqw'
+REGISTRATION_ID =EGISTRATION_ID = 'APA91bEKm4jeTgOEQc7RFwRfJAuggwiE9WhCbYgK7BxMkDUH7lpVQA0Q4-Asl0TDwJf8K1CDQYauxa7WHWBxTfJwwI5b7ZKrT65vkp4XB5ysIsnmpnhLfdyrKb1xb-33-lY7TT2rXSTO0mULXXkqtzUQTD72Fk9hSg'
 
 unacked_messages_quota = 1000
 send_queue = []
@@ -34,7 +34,7 @@ def message_callback(session, message):
         print msg['data']['message']
         send_queue.append({'to': msg['from'],
                            'message_id': random_id(),
-                           'data': {'server_message': '{"operation_type": "mote", operation": "ack", "parameters":{}}'}})
+                           'data': {'server_message': '{"operation_type": "mote", "operation": "ack", "parameters":[]}'}})
     elif msg['message_type'] == 'ack' or msg['message_type'] == 'nack':
       unacked_messages_quota += 1
 
@@ -60,7 +60,7 @@ client.RegisterHandler('message', message_callback)
 
 send_queue.append({'to': REGISTRATION_ID,
                    'message_id': 'reg_id',
-                   'data': {'server_message': '{"operation_type": "mote", operation": "getBattery", "parameters":{}}', 'message_destination': 'RegId',
+                   'data': {'server_message': '{"operation_type": "mote", "operation": "getBattery", "parameters":[]}', 'message_destination': 'RegId',
                             'message_id': random_id()}})
 
 while True:
