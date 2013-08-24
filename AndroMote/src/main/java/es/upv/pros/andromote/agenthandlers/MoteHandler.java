@@ -16,9 +16,8 @@ import  static es.upv.pros.andromote.auxclazzess.Constants.*;
  */
 public class MoteHandler extends AbstractAgentHandler {
 
-    //String SENDER_ID = "84815785587";
-    ServerPayload payload;
-    Context context;
+    private ServerPayload payload;
+    private Context context;
 
     public MoteHandler(ServerPayload payload, Context context){
         super(payload);

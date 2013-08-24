@@ -17,7 +17,9 @@ import org.json.JSONObject;
 
 import es.upv.pros.andromote.MainActivity;
 import es.upv.pros.andromote.R;
+import es.upv.pros.andromote.agenthandlers.ComputateHandler;
 import es.upv.pros.andromote.agenthandlers.MoteHandler;
+import es.upv.pros.andromote.agenthandlers.NotificateHandler;
 import es.upv.pros.andromote.broadcastreceivers.AgentBroadcastReceiver;
 import es.upv.pros.andromote.jsonclassess.ServerPayload;
 import static es.upv.pros.andromote.auxclazzess.Constants.*;
@@ -73,6 +75,12 @@ public class MessageHandlerIntentService extends IntentService {
                 if(payload.getOperation_type().equals("mote")){
                     MoteHandler moteHandler = new MoteHandler(payload, context);
                     moteHandler.handleMessage();
+                } else if(payload.getOperation_type().equals("computate")){
+                    ComputateHandler computateHandler = new ComputateHandler(payload, context);
+                    computateHandler.handleMessage();
+                } else if(payload.getOperation_type().equals("notificate")){
+                    NotificateHandler notificateHandler = new NotificateHandler(payload, context);
+                    notificateHandler.handleMessage();
                 }
                 //sendNotification(server_message);
                 try {

@@ -4,7 +4,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.ArrayList;
+import java.util.Hashtable;
 
 /**
  * Created by bbotella on 21/08/13.
@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class ServerPayload {
     private String operation_type;
     private String operation;
-    private ArrayList <ServerParameter> parameters;
+    private Hashtable<String, Object> parameters;
 
     public ServerPayload (String stringPayload){
         try {
@@ -20,11 +20,11 @@ public class ServerPayload {
             this.operation_type = jsonPayload.getString("operation_type");
             this.operation = jsonPayload.getString("operation");
             JSONArray arrayParams = jsonPayload.getJSONArray("parameters");
-            this.parameters = new ArrayList<ServerParameter>();
+            this.parameters = new Hashtable<String, Object>();
             for(int i=0; i<arrayParams.length(); i++){
                 JSONObject obj = arrayParams.getJSONObject(i);
                 ServerParameter par = new ServerParameter(obj.getString("name"), obj.getString("value"));
-                this.parameters.add(par);
+                this.parameters.put(par.getName(), par.getValue());
             }
         } catch (JSONException e) {
             e.printStackTrace();
@@ -50,11 +50,11 @@ public class ServerPayload {
         this.operation = operation;
     }
 
-    public ArrayList<ServerParameter> getParameters() {
+    public Hashtable<String, Object> getParameters() {
         return parameters;
     }
 
-    public void setParameters(ArrayList<ServerParameter> parameters) {
+    public void setParameters(Hashtable<String, Object> parameters) {
         this.parameters = parameters;
     }
 }
