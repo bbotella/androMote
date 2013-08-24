@@ -16,7 +16,6 @@ class SendThread(threading.Thread):
         if constants.dictThreads.has_key(self.remoteFrom):
             constants.dictThreads[self.remoteFrom]['responseReceived']=True
             constants.dictThreads[self.remoteFrom]['response']=self.remoteResponse
-        print constants.dictThreads[self.remoteFrom]['response']
         self.event.clear()
     
     def setResponse(self, remoteResponse):
