@@ -18,6 +18,7 @@ import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.gcm.GoogleCloudMessaging;
 
 import java.io.IOException;
+import java.util.Hashtable;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import es.upv.pros.andromote.gcmcommunication.MessageSender;
@@ -71,7 +72,10 @@ public class MainActivity extends Activity {
         sendButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                MessageSender sender = new MessageSender(SENDER_ID, "Hello from class", context);
+                Hashtable<String, String> result
+                        = new Hashtable<String, String>();
+                result.put("message", "Hello from class");
+                MessageSender sender = new MessageSender(SENDER_ID, result, context);
                 sender.sendMessage();
             }
         });

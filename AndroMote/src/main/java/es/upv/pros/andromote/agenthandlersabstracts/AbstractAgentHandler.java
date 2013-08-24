@@ -5,6 +5,7 @@ import android.util.Log;
 
 import es.upv.pros.andromote.agenthanlersinterfaces.IAgentHandler;
 import es.upv.pros.andromote.jsonclassess.ServerPayload;
+import static es.upv.pros.andromote.auxclazzess.Constants.*;
 
 /**
  * Created by bbotella on 21/08/13.
@@ -13,7 +14,7 @@ public abstract class AbstractAgentHandler extends Activity implements IAgentHan
     private String from;
     private ServerPayload payload;
     private String operation;
-    static final String TAG = "AndroMote";
+
 
     public AbstractAgentHandler(ServerPayload payload){
         this.payload=payload;

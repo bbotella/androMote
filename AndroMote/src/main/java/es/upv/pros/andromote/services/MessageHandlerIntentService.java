@@ -20,16 +20,14 @@ import es.upv.pros.andromote.R;
 import es.upv.pros.andromote.agenthandlers.MoteHandler;
 import es.upv.pros.andromote.broadcastreceivers.AgentBroadcastReceiver;
 import es.upv.pros.andromote.jsonclassess.ServerPayload;
+import static es.upv.pros.andromote.auxclazzess.Constants.*;
 
 /**
  * Created by bbotella on 19/08/13.
  */
 public class MessageHandlerIntentService extends IntentService {
-    public static final int NOTIFICATION_ID = 1;
     private NotificationManager mNotificationManager;
     Context context;
-
-    static final String TAG = "AndroMote";
 
     public MessageHandlerIntentService() {
         super("MessageHandlerIntentService");
@@ -67,19 +65,11 @@ public class MessageHandlerIntentService extends IntentService {
                 // If it's a regular GCM message, do some work.
             } else if (GoogleCloudMessaging.
                     MESSAGE_TYPE_MESSAGE.equals(messageType)) {
-                // This loop represents the service doing some work.
-                for (int i=0; i<5; i++) {
-                    Log.i(TAG, "Working... " + (i + 1)
-                            + "/5 @ " + SystemClock.elapsedRealtime());
-                    try {
-                        Thread.sleep(50);
-                    } catch (InterruptedException e) {
-                    }
-                }
                 Log.i(TAG, "Completed work @ " + SystemClock.elapsedRealtime());
                 // Post notification of received message.
                 String server_message = extras.getString("server_message", "ERROR");
                 ServerPayload payload = new ServerPayload(server_message);
+
                 if(payload.getOperation_type().equals("mote")){
                     MoteHandler moteHandler = new MoteHandler(payload, context);
                     moteHandler.handleMessage();

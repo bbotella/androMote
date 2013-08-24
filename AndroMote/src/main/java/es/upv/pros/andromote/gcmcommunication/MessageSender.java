@@ -7,29 +7,51 @@ import android.util.Log;
 
 import com.google.android.gms.gcm.GoogleCloudMessaging;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Enumeration;
+import java.util.Hashtable;
 import java.util.Random;
+import static es.upv.pros.andromote.auxclazzess.Constants.*;
+
 
 /**
  * Created by bbotella on 21/08/13.
  */
 public class MessageSender {
-    private String message;
+    Hashtable<String, String> values;
     private String to;
-    static final String TAG = "AndroMote";
     GoogleCloudMessaging gcm;
 
-    public MessageSender(String to, String message, Context context){
+    public MessageSender(String to, Hashtable<String, String> values, Context context){
         this.to = to;
-        this.message = message;
+        this.values = values;
         gcm = GoogleCloudMessaging.getInstance(context);
     }
 
     public void sendMessage(){
         ArrayList<String> passing = new ArrayList<String>();
+
+        JSONObject messageJson = new JSONObject();
+        Enumeration e = this.values.keys();
+        String key;
+        String value;
+        while( e.hasMoreElements() ){
+            key = (String) e.nextElement();
+            value = this.values.get( key );
+            try {
+                messageJson.put(key, value);
+            } catch (JSONException e1) {
+                e1.printStackTrace();
+            }
+        }
+        String message = messageJson.toString();
+
         passing.add(this.to);
-        passing.add(this.message);
+        passing.add(message);
         new AsyncTask<ArrayList<String>, Void, String>() {
             @Override
             protected String doInBackground(ArrayList<String>... params) {
