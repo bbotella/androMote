@@ -64,7 +64,7 @@ class Sender:
                         thread.setFrom(msg['from'])
                         event = constants.dictThreads[msg['from']]['event']
                         event.set()
-                        constants.dictThreads.pop(msg['from'], None)
+                        #constants.dictThreads.pop(msg['from'], None)
             elif msg['message_type'] == 'ack' or msg['message_type'] == 'nack':
                 constants.unacked_messages_quota += 1
     
@@ -81,8 +81,8 @@ class Sender:
             node=template.format(self.client.Bind.bound[0], json.dumps(json_dict))))
         
     
-    def sendMessage(self, mess):
-        constants.send_queue.append({'to': constants.REGISTRATION_ID,
+    def sendMessage(self, destination, mess):
+        constants.send_queue.append({'to': destination,
                    'message_id': 'reg_id',
                    'data': {'server_message': mess, 'message_destination': 'RegId',
                             'message_id': self.random_id()}})
