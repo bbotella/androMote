@@ -23,12 +23,15 @@
         <receiver android:name="es.upv.pros.andromote.broadcastreceivers.AgentBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+
                 <category android:name="es.upv.pros.andromote.broadcastreceivers"/>
             </intent-filter>
         </receiver>
 
         <service android:name="es.upv.pros.andromote.services.MessageHandlerIntentService"/>
 
+        <activity android:label="@string/title_activity_settings" android:name="es.upv.pros.andromote.visibleactivities.SettingsActivity">
+        </activity>
     </application>
 
 </manifest>

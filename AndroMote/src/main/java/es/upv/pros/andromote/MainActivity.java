@@ -2,6 +2,7 @@ package es.upv.pros.andromote;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -9,6 +10,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -22,6 +24,10 @@ import java.util.Hashtable;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import es.upv.pros.andromote.gcmcommunication.MessageSender;
+import es.upv.pros.andromote.visibleactivities.SettingsActivity;
+
+import static es.upv.pros.andromote.auxclazzess.Constants.SENDER_ID;
+import static es.upv.pros.andromote.auxclazzess.Constants.TAG;
 
 public class MainActivity extends Activity {
 
@@ -34,12 +40,10 @@ public class MainActivity extends Activity {
      * Substitute you own sender ID here. This is the project number you got
      * from the API Console, as described in "Getting Started."
      */
-    String SENDER_ID = "84815785587";
 
     /**
      * Tag used on log messages.
      */
-    static final String TAG = "AndroMote";
 
     TextView mDisplay;
     GoogleCloudMessaging gcm;
@@ -251,6 +255,20 @@ public class MainActivity extends Activity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
+        switch(item.getItemId())
+        {
+            case R.id.action_settings:
+                Intent i = new Intent(context, SettingsActivity.class);
+                startActivity(i);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
     
 }

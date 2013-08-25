@@ -1,0 +1,20 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- These settings headers are only used on tablets. -->
+
+
+
+    <header
+        android:fragment="es.upv.pros.andromote.visibleactivities.SettingsActivity$MotePreferenceFragment"
+        android:title="@string/pref_header_mote" />
+
+    <header
+        android:fragment="es.upv.pros.andromote.visibleactivities.SettingsActivity$ComputePreferenceFragment"
+        android:title="@string/pref_header_compute" />
+
+    <header
+        android:fragment="es.upv.pros.andromote.visibleactivities.SettingsActivity$NotifyPreferenceFragment"
+        android:title="@string/pref_header_notify" />
+
+</preference-headers>
+<!-- From: file:/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/xml/pref_headers.xml -->

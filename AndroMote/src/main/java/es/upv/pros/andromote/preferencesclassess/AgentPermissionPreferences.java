@@ -2,6 +2,7 @@ package es.upv.pros.andromote.preferencesclassess;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -21,28 +22,9 @@ public class AgentPermissionPreferences {
 
     public AgentPermissionPreferences(Context context){
         // Restore preferences
-        this.settings = context.getSharedPreferences(ACCESS_PREFS_NAME, 0);
-        if(!settings.contains("created")){
-            //If shared preferences where not created, then we initialize them with all the needed
-            //settings set to True
-            SharedPreferences.Editor editor = settings.edit();
-            //General types permission
-            editor.putBoolean("motePermission", true);
-            editor.putBoolean("computePermission", true);
-            editor.putBoolean("notifyPermission", true);
+        //this.settings = context.getSharedPreferences(ACCESS_PREFS_NAME, 0);
+        this.settings = PreferenceManager.getDefaultSharedPreferences(context);
 
-            //Mote permissions
-            editor.putBoolean("getBatteryPermission", true);
-
-            //Compute permissions
-            editor.putBoolean("sumFloatPermission", true);
-
-            //Notify permissions
-
-            //Created flag
-            editor.putBoolean("created", true);
-            editor.commit();
-        }
     }
 
     //General getters and setters
@@ -72,24 +54,26 @@ public class AgentPermissionPreferences {
     }
 
     //Mote getters and setters
-    public boolean getSumFloatPermission(){
+    public boolean getGetBatteryPermission(){
         return settings.getBoolean("getBatteryPermission", true);
     }
-    public void setSumFloatPermission(boolean pref){
+    public void setGetBatteryPermission(boolean pref){
         SharedPreferences.Editor editor = settings.edit();
         editor.putBoolean("getBatteryPermission", pref);
         editor.commit();
     }
 
+
     //Compute getters and setters
-    public boolean getGetBatteryPermission(){
+    public boolean getSumFloatPermission(){
         return settings.getBoolean("sumFloatPermission", true);
     }
-    public void setGetBatteryPermission(boolean pref){
+    public void setSumFloatPermission(boolean pref){
         SharedPreferences.Editor editor = settings.edit();
         editor.putBoolean("sumFloatPermission", pref);
         editor.commit();
     }
+
 
     //Notify getters and setters
 

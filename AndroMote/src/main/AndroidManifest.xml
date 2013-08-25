@@ -33,16 +33,21 @@
         </activity>
 
         <receiver
-                android:name=".broadcastreceivers.AgentBroadcastReceiver"
-                android:permission="com.google.android.c2dm.permission.SEND" >
+            android:name="es.upv.pros.andromote.broadcastreceivers.AgentBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
                 <category android:name="es.upv.pros.andromote.broadcastreceivers" />
             </intent-filter>
         </receiver>
 
-        <service android:name=".services.MessageHandlerIntentService" />
+        <service android:name="es.upv.pros.andromote.services.MessageHandlerIntentService" />
 
+        <activity
+            android:name="es.upv.pros.andromote.visibleactivities.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
     </application>
 
 </manifest>

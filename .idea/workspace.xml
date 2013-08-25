@@ -12,21 +12,33 @@
       </filter>
     </filters>
   </component>
+  <component name="AndroidLayoutPreviewToolWindow">
+    <option name="state">
+      <GlobalState />
+    </option>
+  </component>
   <component name="AndroidLayouts">
     <shared>
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e573107a-9b02-435c-aec1-db6e9102427c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/preferencesclassess/AgentPermissionPreferences.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/agenthandlersabstracts/AbstractAgentHandler.java" afterPath="$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/agenthandlersabstracts/AbstractAgentHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/agenthandlers/ComputateHandler.java" afterPath="$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/agenthandlers/ComputateHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/auxclazzess/Constants.java" afterPath="$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/auxclazzess/Constants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/services/MessageHandlerIntentService.java" afterPath="$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/services/MessageHandlerIntentService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/agenthandlers/MoteHandler.java" afterPath="$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/agenthandlers/MoteHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/agenthandlers/NotificateHandler.java" afterPath="$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/agenthandlers/NotificateHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/visibleactivities/SettingsActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndroMote/src/main/res/xml/pref_compute.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndroMote/src/main/res/xml/pref_headers.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndroMote/src/main/res/xml/pref_mote.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndroMote/src/main/res/xml/pref_notify.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AndroMote/src/main/res/values/strings_activity_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/preferencesclassess/AgentPermissionPreferences.java" afterPath="$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/preferencesclassess/AgentPermissionPreferences.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroMote/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroMote/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/MainActivity.java" afterPath="$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroMote/build/source/r/debug/es/upv/pros/andromote/R.java" afterPath="$PROJECT_DIR$/AndroMote/build/source/r/debug/es/upv/pros/andromote/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroMote/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/AndroMote/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroMote/build/res/all/debug/values/values.xml" afterPath="$PROJECT_DIR$/AndroMote/build/res/all/debug/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AndroMote.iws" />
@@ -82,6 +94,23 @@
         <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
       </breakpoint>
     </breakpoint_any>
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/agenthandlers/ComputateHandler.java" line="36" class="es.upv.pros.andromote.agenthandlers.ComputateHandler" package="es.upv.pros.andromote.agenthandlers">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -91,22 +120,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MessageHandlerIntentService.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/services/MessageHandlerIntentService.java">
+      <file leaf-file-name="SettingsActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/visibleactivities/SettingsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="0" selection-start="3016" selection-end="3016" vertical-scroll-proportion="0.3324397" vertical-offset="1001" max-vertical-offset="2115">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#5642#5658#0" expanded="true" />
-              </folding>
+            <state line="80" column="46" selection-start="2992" selection-end="3008" vertical-scroll-proportion="-14.384615" vertical-offset="721" max-vertical-offset="1380">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AgentPermissionPreferences.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="pref_headers.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AndroMote/src/main/res/xml/pref_headers.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="0" selection-start="671" selection-end="671" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AgentPermissionPreferences.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/preferencesclassess/AgentPermissionPreferences.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="52" selection-start="1793" selection-end="1809" vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="1740">
+            <state line="74" column="5" selection-start="2447" selection-end="2447" vertical-scroll-proportion="0.89285713" vertical-offset="735" max-vertical-offset="1500">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,31 +149,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Constants.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/auxclazzess/Constants.java">
+      <file leaf-file-name="pref_compute.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AndroMote/src/main/res/xml/pref_compute.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="54" selection-start="432" selection-end="458" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+            <state line="15" column="0" selection-start="578" selection-end="578" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NotificateHandler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/agenthandlers/NotificateHandler.java">
+      <file leaf-file-name="ComputateHandler.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/agenthandlers/ComputateHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="31" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MoteHandler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/agenthandlers/MoteHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="8" selection-start="883" selection-end="942" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="1005">
+            <state line="19" column="13" selection-start="650" selection-end="650" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="900">
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1612#1628#0" expanded="true" />
+                <element signature="e#1904#1920#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -198,22 +223,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/jsonclassess/ServerParameter.java" />
-        <option value="$PROJECT_DIR$/AndroMote/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/MainActivity.java" />
-        <option value="$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/moteWorkers/BatteryGetter.java" />
-        <option value="$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/gcmcommunication/MessageSender.java" />
-        <option value="$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/computateworkers/SumHandler.java" />
-        <option value="$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/jsonclassess/ServerPayload.java" />
-        <option value="$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/preferencesclassess/AgentPermisionPreferences.java" />
-        <option value="$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/preferencesclassess/AgentPermissionPreferences.java" />
-        <option value="$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/agenthanlersinterfaces/IAgentHandler.java" />
-        <option value="$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/auxclazzess/Constants.java" />
-        <option value="$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/agenthandlersabstracts/AbstractAgentHandler.java" />
-        <option value="$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/agenthandlers/MoteHandler.java" />
-        <option value="$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/agenthandlers/ComputateHandler.java" />
         <option value="$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/agenthandlers/NotificateHandler.java" />
         <option value="$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/services/MessageHandlerIntentService.java" />
+        <option value="$PROJECT_DIR$/AndroMote/src/main/java/com/mycompany/myapp/SettingsActivity.java" />
+        <option value="$PROJECT_DIR$/AndroMote/src/main/res/layout/preferences_activity.xml" />
+        <option value="$PROJECT_DIR$/AndroMote/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/visibleactivities/PreferencesActivity.java" />
+        <option value="$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/MainActivity.java" />
+        <option value="$PROJECT_DIR$/AndroMote/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/AndroMote/src/main/res/xml/pref_mote.xml" />
+        <option value="$PROJECT_DIR$/AndroMote/src/main/res/values/strings_activity_settings.xml" />
+        <option value="$PROJECT_DIR$/AndroMote/src/main/res/xml/pref_compute.xml" />
+        <option value="$PROJECT_DIR$/AndroMote/src/main/res/xml/pref_notify.xml" />
+        <option value="$PROJECT_DIR$/AndroMote/src/main/res/xml/pref_headers.xml" />
+        <option value="$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/visibleactivities/SettingsActivity.java" />
+        <option value="$PROJECT_DIR$/AndroMote/src/main/res/xml/preferences_defaults.xml" />
+        <option value="$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/preferencesclassess/AgentPermissionPreferences.java" />
       </list>
     </option>
   </component>
@@ -350,6 +375,122 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xml" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroMote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroMoteProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroMote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroMote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroMoteProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroMote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroMote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroMoteProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroMote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroMote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroMoteProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AndroMote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -388,7 +529,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
+              <option name="myItemId" value="visibleactivities" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -456,108 +597,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="auxclazzess" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AndroMote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AndroMoteProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AndroMote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="andromote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="agenthanlersinterfaces" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AndroMote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AndroMoteProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AndroMote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="andromote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="agenthandlersabstracts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AndroMote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AndroMoteProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AndroMote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="andromote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="agenthandlers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -591,6 +630,7 @@
       <recent name="es.upv.pros.andromote.agenthandlers" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/AndroMote/src/main/res/xml" />
       <recent name="$PROJECT_DIR$/AndroMote/libs" />
     </key>
   </component>
@@ -751,26 +791,27 @@
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3997006" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934132" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37275448" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.78592813" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934132" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3997006" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934132" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934132" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41317365" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.6002994" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934132" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.6706587" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32934132" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -792,134 +833,134 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-18/android/os/AsyncTask.java">
+    <entry file="file://$PROJECT_DIR$/AndroMote/src/main/res/menu/main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="231" column="0" selection-start="10694" selection-end="10694" vertical-scroll-proportion="0.0" vertical-offset="2921" max-vertical-offset="9630">
+        <state line="6" column="0" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+          <folding>
+            <element signature="e#132#157#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroMote/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-18/android/app/ActivityThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2208" column="0" selection-start="92078" selection-end="92078" vertical-scroll-proportion="0.3324397" vertical-offset="31286" max-vertical-offset="74925">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="13" selection-start="2713" selection-end="2713" vertical-scroll-proportion="0.859375" vertical-offset="595" max-vertical-offset="3540">
+        <state line="265" column="63" selection-start="9550" selection-end="9550" vertical-scroll-proportion="0.6484375" vertical-offset="3485" max-vertical-offset="4125">
           <folding>
-            <element signature="e#2316#2723#0" expanded="true" />
-            <element signature="e#2497#2513#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2494#2901#0" expanded="false" />
+            <element signature="e#2675#2691#0" expanded="false" />
+            <element signature="e#2890#2891#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/gcmcommunication/MessageSender.java">
+    <entry file="file://$PROJECT_DIR$/AndroMote/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="418" selection-end="478" vertical-scroll-proportion="0.5625" vertical-offset="75" max-vertical-offset="1335">
+        <state line="47" column="82" selection-start="2020" selection-end="2020" vertical-scroll-proportion="0.7890625" vertical-offset="200" max-vertical-offset="885">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/jsonclassess/ServerParameter.java">
+    <entry file="file://$PROJECT_DIR$/AndroMote/src/main/res/xml/pref_mote.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="12" selection-start="157" selection-end="157" vertical-scroll-proportion="0.328125" vertical-offset="0" max-vertical-offset="540">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/moteWorkers/BatteryGetter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="5" selection-start="353" selection-end="353" vertical-scroll-proportion="0.65625" vertical-offset="0" max-vertical-offset="570">
+        <state line="15" column="0" selection-start="575" selection-end="575" vertical-scroll-proportion="0.3515625" vertical-offset="0" max-vertical-offset="640">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#170#197#0" expanded="true" />
+            <element signature="e#226#265#0" expanded="true" />
+            <element signature="e#407#438#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/broadcastreceivers/AgentBroadcastReceiver.java">
+    <entry file="file://$PROJECT_DIR$/AndroMote/src/main/res/xml/pref_notify.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="899" selection-end="899" vertical-scroll-proportion="0.5519481" vertical-offset="0" max-vertical-offset="462">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/computateworkers/SumHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="238" selection-end="238" vertical-scroll-proportion="0.42207792" vertical-offset="0" max-vertical-offset="462">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/jsonclassess/ServerPayload.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="878" selection-end="878" vertical-scroll-proportion="0.0" vertical-offset="251" max-vertical-offset="990">
+        <state line="5" column="68" selection-start="270" selection-end="270" vertical-scroll-proportion="0.1171875" vertical-offset="0" max-vertical-offset="640">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#172#201#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/agenthanlersinterfaces/IAgentHandler.java">
+    <entry file="file://$PROJECT_DIR$/AndroMote/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="1" selection-start="193" selection-end="193" vertical-scroll-proportion="0.30690536" vertical-offset="0" max-vertical-offset="391">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="640">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/agenthandlersabstracts/AbstractAgentHandler.java">
+    <entry file="file://$PROJECT_DIR$/AndroMote/src/main/res/values/strings_activity_settings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="36" selection-start="1613" selection-end="1613" vertical-scroll-proportion="0.80818415" vertical-offset="629" max-vertical-offset="1110">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1510#1526#0" expanded="true" />
-          </folding>
+        <state line="18" column="67" selection-start="935" selection-end="935" vertical-scroll-proportion="0.421875" vertical-offset="0" max-vertical-offset="640">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/auxclazzess/Constants.java">
+    <entry file="file://$PROJECT_DIR$/AndroMote/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="54" selection-start="432" selection-end="458" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+        <state line="6" column="24" selection-start="333" selection-end="333" vertical-scroll-proportion="0.14354067" vertical-offset="0" max-vertical-offset="627">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroMote/src/main/res/values/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="640">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroMote/src/main/res/xml/pref_headers.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="671" selection-end="671" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/visibleactivities/SettingsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="46" selection-start="2992" selection-end="3008" vertical-scroll-proportion="-14.384615" vertical-offset="721" max-vertical-offset="1380">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroMote/src/main/res/xml/pref_compute.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="578" selection-end="578" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/agenthandlers/ComputateHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="13" selection-start="650" selection-end="650" vertical-scroll-proportion="0.30690536" vertical-offset="0" max-vertical-offset="900">
+        <state line="19" column="13" selection-start="650" selection-end="650" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="900">
           <folding>
             <element signature="e#1904#1920#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/agenthandlers/MoteHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="8" selection-start="883" selection-end="942" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="1005">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1612#1628#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/agenthandlers/NotificateHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="31" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/preferencesclassess/AgentPermissionPreferences.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="52" selection-start="1793" selection-end="1809" vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="1740">
+        <state line="74" column="5" selection-start="2447" selection-end="2447" vertical-scroll-proportion="0.89285713" vertical-offset="735" max-vertical-offset="1500">
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroMote/src/main/java/es/upv/pros/andromote/services/MessageHandlerIntentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="0" selection-start="3016" selection-end="3016" vertical-scroll-proportion="0.3324397" vertical-offset="1001" max-vertical-offset="2115">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5642#5658#0" expanded="true" />
           </folding>
         </state>
       </provider>
