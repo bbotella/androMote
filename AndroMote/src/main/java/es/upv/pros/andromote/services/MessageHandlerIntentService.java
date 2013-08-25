@@ -12,8 +12,7 @@ import android.util.Log;
 
 import com.google.android.gms.gcm.GoogleCloudMessaging;
 
-import org.json.JSONException;
-import org.json.JSONObject;
+import java.util.Hashtable;
 
 import es.upv.pros.andromote.MainActivity;
 import es.upv.pros.andromote.R;
@@ -21,7 +20,10 @@ import es.upv.pros.andromote.agenthandlers.ComputateHandler;
 import es.upv.pros.andromote.agenthandlers.MoteHandler;
 import es.upv.pros.andromote.agenthandlers.NotificateHandler;
 import es.upv.pros.andromote.broadcastreceivers.AgentBroadcastReceiver;
+import es.upv.pros.andromote.gcmcommunication.MessageSender;
 import es.upv.pros.andromote.jsonclassess.ServerPayload;
+import es.upv.pros.andromote.preferencesclassess.AgentPermissionPreferences;
+
 import static es.upv.pros.andromote.auxclazzess.Constants.*;
 
 /**
@@ -71,25 +73,28 @@ public class MessageHandlerIntentService extends IntentService {
                 // Post notification of received message.
                 String server_message = extras.getString("server_message", "ERROR");
                 ServerPayload payload = new ServerPayload(server_message);
-
+                AgentPermissionPreferences preferences = new AgentPermissionPreferences(context);
                 if(payload.getOperation_type().equals("mote")){
-                    MoteHandler moteHandler = new MoteHandler(payload, context);
-                    moteHandler.handleMessage();
+                    if(preferences.getMotePermission()){
+                        MoteHandler moteHandler = new MoteHandler(payload, context);
+                        moteHandler.handleMessage();
+                    } else {
+                        this.operationNotAllowedHandler();
+                    }
                 } else if(payload.getOperation_type().equals("computate")){
-                    ComputateHandler computateHandler = new ComputateHandler(payload, context);
-                    computateHandler.handleMessage();
+                    if (preferences.getComputePermission()){
+                        ComputateHandler computateHandler = new ComputateHandler(payload, context);
+                        computateHandler.handleMessage();
+                    } else {
+                        this.operationNotAllowedHandler();
+                    }
                 } else if(payload.getOperation_type().equals("notificate")){
-                    NotificateHandler notificateHandler = new NotificateHandler(payload, context);
-                    notificateHandler.handleMessage();
-                }
-                //sendNotification(server_message);
-                try {
-                    JSONObject server_json = new JSONObject(server_message);
-                    String operation_type = server_json.getString("operation_type");
-
-
-                } catch (JSONException e) {
-                    Log.d(TAG, "Error parsing the json from server");
+                    if(preferences.getNotifyPermission()){
+                        NotificateHandler notificateHandler = new NotificateHandler(payload, context);
+                        notificateHandler.handleMessage();
+                    } else {
+                        this.operationNotAllowedHandler();
+                    }
                 }
                 Log.d(TAG, "Received: " + extras.toString());
             }
@@ -118,5 +123,14 @@ public class MessageHandlerIntentService extends IntentService {
 
         mBuilder.setContentIntent(contentIntent);
         mNotificationManager.notify(NOTIFICATION_ID, mBuilder.build());
+    }
+
+    private void operationNotAllowedHandler(){
+        Hashtable<String, String> result
+                = new Hashtable<String, String>();
+        result.put("exitcode", MODE_NOT_ALLOWED_CODE+"");
+        result.put("msg", "Mode not allowed by agent");
+        MessageSender sender = new MessageSender(SENDER_ID, result, context);
+        sender.sendMessage();
     }
 }

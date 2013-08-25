@@ -9,7 +9,9 @@ import es.upv.pros.andromote.agenthandlersabstracts.AbstractAgentHandler;
 import es.upv.pros.andromote.computateworkers.SumHandler;
 import es.upv.pros.andromote.gcmcommunication.MessageSender;
 import es.upv.pros.andromote.jsonclassess.ServerPayload;
+import es.upv.pros.andromote.preferencesclassess.AgentPermissionPreferences;
 
+import static es.upv.pros.andromote.auxclazzess.Constants.OPERATION_NOT_ALLOWED_CODE;
 import static es.upv.pros.andromote.auxclazzess.Constants.SENDER_ID;
 
 /**
@@ -19,18 +21,24 @@ public class ComputateHandler extends AbstractAgentHandler {
 
     private ServerPayload payload;
     private Context context;
+    private AgentPermissionPreferences preferences;
 
     public ComputateHandler(ServerPayload payload, Context context){
-        super(payload);
+        super(payload, context);
         this.payload=payload;
         this.context = context;
+        this.preferences = new AgentPermissionPreferences(context);
     }
 
     @Override
     public void handleMessage(){
         String operation = payload.getOperation();
         if(operation.equals("sumFloat")){
-            handleSumFloat();
+            if(preferences.getSumFloatPermission()){
+                handleSumFloat();
+            } else {
+                this.handlePermissionDenied(OPERATION_NOT_ALLOWED_CODE);
+            }
         } else if(operation.equals("ack")){
             handleAckMessage();
         }
