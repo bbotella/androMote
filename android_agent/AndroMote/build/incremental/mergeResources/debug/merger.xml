@@ -2,39 +2,39 @@
 <merger>
 
     <dataSet config="main" >
-        <source path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res" >
+        <source path="/Users/bbotella/Documents/dev/gitHub-CV/androMote/android_agent/AndroMote/src/main/res" >
             <file
                 name="ic_launcher"
-                path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/drawable-hdpi/ic_launcher.png"
+                path="/Users/bbotella/Documents/dev/gitHub-CV/androMote/android_agent/AndroMote/src/main/res/drawable-hdpi/ic_launcher.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
                 name="ic_launcher"
-                path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/drawable-mdpi/ic_launcher.png"
+                path="/Users/bbotella/Documents/dev/gitHub-CV/androMote/android_agent/AndroMote/src/main/res/drawable-mdpi/ic_launcher.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
                 name="ic_launcher"
-                path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/drawable-xhdpi/ic_launcher.png"
+                path="/Users/bbotella/Documents/dev/gitHub-CV/androMote/android_agent/AndroMote/src/main/res/drawable-xhdpi/ic_launcher.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="ic_launcher"
-                path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/drawable-xxhdpi/ic_launcher.png"
+                path="/Users/bbotella/Documents/dev/gitHub-CV/androMote/android_agent/AndroMote/src/main/res/drawable-xxhdpi/ic_launcher.png"
                 qualifiers="xxhdpi"
                 type="drawable" />
             <file
                 name="activity_main"
-                path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/layout/activity_main.xml"
+                path="/Users/bbotella/Documents/dev/gitHub-CV/androMote/android_agent/AndroMote/src/main/res/layout/activity_main.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="main"
-                path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/menu/main.xml"
+                path="/Users/bbotella/Documents/dev/gitHub-CV/androMote/android_agent/AndroMote/src/main/res/menu/main.xml"
                 qualifiers=""
                 type="menu" />
             <file
-                path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/values/dimens.xml"
+                path="/Users/bbotella/Documents/dev/gitHub-CV/androMote/android_agent/AndroMote/src/main/res/values/dimens.xml"
                 qualifiers="" >
                 <dimen name="activity_horizontal_margin" >16dp
                 </dimen>
@@ -42,7 +42,7 @@
                 </dimen>
             </file>
             <file
-                path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/values/strings.xml"
+                path="/Users/bbotella/Documents/dev/gitHub-CV/androMote/android_agent/AndroMote/src/main/res/values/strings.xml"
                 qualifiers="" >
                 <string name="mote_tab_settings_title" >Mote
                 </string>
@@ -54,15 +54,15 @@
                 </string>
                 <string name="notify_tab_settings_title" >Notifications
                 </string>
-                <string name="hello_world" >Hello world!
-                </string>
                 <string name="startAgentButton" >Start Agent
+                </string>
+                <string name="hello_world" >Hello world!
                 </string>
                 <string name="compute_tab_settings_title" >Compute
                 </string>
             </file>
             <file
-                path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/values/strings_activity_settings.xml"
+                path="/Users/bbotella/Documents/dev/gitHub-CV/androMote/android_agent/AndroMote/src/main/res/values/strings_activity_settings.xml"
                 qualifiers="" >
                 <string name="title_activity_settings" >Access Settings
                 </string>
@@ -94,7 +94,7 @@
                 </string>
             </file>
             <file
-                path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/values/styles.xml"
+                path="/Users/bbotella/Documents/dev/gitHub-CV/androMote/android_agent/AndroMote/src/main/res/values/styles.xml"
                 qualifiers="" >
 
                 <style
@@ -116,13 +116,13 @@
                 </style>
             </file>
             <file
-                path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/values-sw720dp-land/dimens.xml"
+                path="/Users/bbotella/Documents/dev/gitHub-CV/androMote/android_agent/AndroMote/src/main/res/values-sw720dp-land/dimens.xml"
                 qualifiers="sw720dp-land" >
                 <dimen name="activity_horizontal_margin" >128dp
                 </dimen>
             </file>
             <file
-                path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/values-v11/styles.xml"
+                path="/Users/bbotella/Documents/dev/gitHub-CV/androMote/android_agent/AndroMote/src/main/res/values-v11/styles.xml"
                 qualifiers="v11" >
 
                 <style
@@ -133,7 +133,7 @@
                 </style>
             </file>
             <file
-                path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/values-v14/styles.xml"
+                path="/Users/bbotella/Documents/dev/gitHub-CV/androMote/android_agent/AndroMote/src/main/res/values-v14/styles.xml"
                 qualifiers="v14" >
 
                 <style
@@ -145,29 +145,29 @@
             </file>
             <file
                 name="pref_compute"
-                path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/xml/pref_compute.xml"
+                path="/Users/bbotella/Documents/dev/gitHub-CV/androMote/android_agent/AndroMote/src/main/res/xml/pref_compute.xml"
                 qualifiers=""
                 type="xml" />
             <file
                 name="pref_headers"
-                path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/xml/pref_headers.xml"
+                path="/Users/bbotella/Documents/dev/gitHub-CV/androMote/android_agent/AndroMote/src/main/res/xml/pref_headers.xml"
                 qualifiers=""
                 type="xml" />
             <file
                 name="pref_mote"
-                path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/xml/pref_mote.xml"
+                path="/Users/bbotella/Documents/dev/gitHub-CV/androMote/android_agent/AndroMote/src/main/res/xml/pref_mote.xml"
                 qualifiers=""
                 type="xml" />
             <file
                 name="pref_notify"
-                path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/xml/pref_notify.xml"
+                path="/Users/bbotella/Documents/dev/gitHub-CV/androMote/android_agent/AndroMote/src/main/res/xml/pref_notify.xml"
                 qualifiers=""
                 type="xml" />
         </source>
-        <source path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/build/res/rs/debug" />
+        <source path="/Users/bbotella/Documents/dev/gitHub-CV/androMote/android_agent/AndroMote/build/res/rs/debug" />
     </dataSet>
     <dataSet config="debug" >
-        <source path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/debug/res" />
+        <source path="/Users/bbotella/Documents/dev/gitHub-CV/androMote/android_agent/AndroMote/src/debug/res" />
     </dataSet>
 
 </merger>

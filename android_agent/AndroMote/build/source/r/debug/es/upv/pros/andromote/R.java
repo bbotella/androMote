@@ -11,8 +11,8 @@ public final class R {
     public static final class attr {
     }
     public static final class dimen {
-        /**  From: file:/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/values/dimens.xml 
- From: file:/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/values-sw720dp-land/dimens.xml 
+        /**  From: file:/Users/bbotella/Documents/dev/gitHub-CV/androMote/android_agent/AndroMote/src/main/res/values/dimens.xml 
+ From: file:/Users/bbotella/Documents/dev/gitHub-CV/androMote/android_agent/AndroMote/src/main/res/values-sw720dp-land/dimens.xml 
          */
         public static final int activity_horizontal_margin=0x7f050000;
         public static final int activity_vertical_margin=0x7f050001;
@@ -33,7 +33,7 @@ public final class R {
         public static final int main=0x7f080000;
     }
     public static final class string {
-        /**  From: file:/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/values/strings.xml 
+        /**  From: file:/Users/bbotella/Documents/dev/gitHub-CV/androMote/android_agent/AndroMote/src/main/res/values/strings.xml 
          */
         public static final int action_settings=0x7f060000;
         public static final int app_name=0x7f060001;
@@ -41,7 +41,7 @@ public final class R {
         public static final int hello_world=0x7f060003;
         public static final int mote_tab_settings_title=0x7f060004;
         public static final int notify_tab_settings_title=0x7f060005;
-        /**  From: file:/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/values/strings_activity_settings.xml 
+        /**  From: file:/Users/bbotella/Documents/dev/gitHub-CV/androMote/android_agent/AndroMote/src/main/res/values/strings_activity_settings.xml 
          */
         public static final int pref_compute_general=0x7f060006;
         public static final int pref_compute_general_description=0x7f060007;
@@ -56,24 +56,24 @@ public final class R {
         public static final int pref_mote_sum_float_description=0x7f060010;
         public static final int pref_notify_general=0x7f060011;
         public static final int pref_notify_general_description=0x7f060012;
-        /**  From: file:/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/values/strings.xml 
+        /**  From: file:/Users/bbotella/Documents/dev/gitHub-CV/androMote/android_agent/AndroMote/src/main/res/values/strings.xml 
          */
         public static final int startAgentButton=0x7f060013;
         public static final int stop_agent_button=0x7f060014;
-        /**  From: file:/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/values/strings_activity_settings.xml 
+        /**  From: file:/Users/bbotella/Documents/dev/gitHub-CV/androMote/android_agent/AndroMote/src/main/res/values/strings_activity_settings.xml 
          */
         public static final int title_activity_settings=0x7f060015;
     }
     public static final class style {
-        /**  From: file:/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/values/styles.xml 
+        /**  From: file:/Users/bbotella/Documents/dev/gitHub-CV/androMote/android_agent/AndroMote/src/main/res/values/styles.xml 
 
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
         
- From: file:/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/values-v11/styles.xml 
+ From: file:/Users/bbotella/Documents/dev/gitHub-CV/androMote/android_agent/AndroMote/src/main/res/values-v11/styles.xml 
  API 11 theme customizations can go here. 
- From: file:/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/values-v14/styles.xml 
+ From: file:/Users/bbotella/Documents/dev/gitHub-CV/androMote/android_agent/AndroMote/src/main/res/values-v14/styles.xml 
  API 14 theme customizations can go here. 
          */
         public static final int AppBaseTheme=0x7f070000;

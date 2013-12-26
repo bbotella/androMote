@@ -2,10 +2,10 @@
 <merger>
 
     <dataSet config="main" >
-        <source path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/assets" />
+        <source path="/Users/bbotella/Documents/dev/gitHub-CV/androMote/android_agent/AndroMote/src/main/assets" />
     </dataSet>
     <dataSet config="debug" >
-        <source path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/debug/assets" />
+        <source path="/Users/bbotella/Documents/dev/gitHub-CV/androMote/android_agent/AndroMote/src/debug/assets" />
     </dataSet>
 
 </merger>
