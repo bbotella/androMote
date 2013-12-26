@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="main" >
+        <source path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res" >
+            <file
+                name="ic_launcher"
+                path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/drawable-hdpi/ic_launcher.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/drawable-mdpi/ic_launcher.png"
+                qualifiers="mdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/drawable-xhdpi/ic_launcher.png"
+                qualifiers="xhdpi"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/drawable-xxhdpi/ic_launcher.png"
+                qualifiers="xxhdpi"
+                type="drawable" />
+            <file
+                name="activity_main"
+                path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/layout/activity_main.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="main"
+                path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/menu/main.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/values/dimens.xml"
+                qualifiers="" >
+                <dimen name="activity_horizontal_margin" >16dp
+                </dimen>
+                <dimen name="activity_vertical_margin" >16dp
+                </dimen>
+            </file>
+            <file
+                path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/values/strings.xml"
+                qualifiers="" >
+                <string name="mote_tab_settings_title" >Mote
+                </string>
+                <string name="action_settings" >Settings
+                </string>
+                <string name="app_name" >AndroMote
+                </string>
+                <string name="stop_agent_button" >Stop Agent
+                </string>
+                <string name="notify_tab_settings_title" >Notifications
+                </string>
+                <string name="hello_world" >Hello world!
+                </string>
+                <string name="startAgentButton" >Start Agent
+                </string>
+                <string name="compute_tab_settings_title" >Compute
+                </string>
+            </file>
+            <file
+                path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/values/strings_activity_settings.xml"
+                qualifiers="" >
+                <string name="title_activity_settings" >Access Settings
+                </string>
+                <string name="pref_mote_general" >Allow mote service
+                </string>
+                <string name="pref_notify_general_description" >Activate / Deactivate notify service
+                </string>
+                <string name="pref_compute_general" >Allow compute service
+                </string>
+                <string name="pref_mote_sum_float" >Sum float
+                </string>
+                <string name="pref_mote_sum_float_description" >Allow float sums
+                </string>
+                <string name="pref_header_compute" >Compute settings
+                </string>
+                <string name="pref_compute_general_description" >Activate / Deactivate compute service
+                </string>
+                <string name="pref_mote_get_battery" >Battery level
+                </string>
+                <string name="pref_notify_general" >Allow notify service
+                </string>
+                <string name="pref_mote_get_battery_description" >Get battery level
+                </string>
+                <string name="pref_header_mote" >Mote settings
+                </string>
+                <string name="pref_header_notify" >Notification settings
+                </string>
+                <string name="pref_mote_general_description" >Activate / Deactivate mote service
+                </string>
+            </file>
+            <file
+                path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/values/styles.xml"
+                qualifiers="" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Light" >
+
+                    <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+                    -->
+                </style>
+
+                <style
+                    name="AppTheme"
+                    parent="AppBaseTheme" >
+
+                    <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+                </style>
+            </file>
+            <file
+                path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/values-sw720dp-land/dimens.xml"
+                qualifiers="sw720dp-land" >
+                <dimen name="activity_horizontal_margin" >128dp
+                </dimen>
+            </file>
+            <file
+                path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/values-v11/styles.xml"
+                qualifiers="v11" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Holo.Light" >
+
+                    <!-- API 11 theme customizations can go here. -->
+                </style>
+            </file>
+            <file
+                path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/values-v14/styles.xml"
+                qualifiers="v14" >
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Holo.Light.DarkActionBar" >
+
+                    <!-- API 14 theme customizations can go here. -->
+                </style>
+            </file>
+            <file
+                name="pref_compute"
+                path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/xml/pref_compute.xml"
+                qualifiers=""
+                type="xml" />
+            <file
+                name="pref_headers"
+                path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/xml/pref_headers.xml"
+                qualifiers=""
+                type="xml" />
+            <file
+                name="pref_mote"
+                path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/xml/pref_mote.xml"
+                qualifiers=""
+                type="xml" />
+            <file
+                name="pref_notify"
+                path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/main/res/xml/pref_notify.xml"
+                qualifiers=""
+                type="xml" />
+        </source>
+        <source path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/build/res/rs/debug" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/src/debug/res" />
+    </dataSet>
+
+</merger>

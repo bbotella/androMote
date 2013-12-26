@@ -1,0 +1,17 @@
+# incremental data. DO NOT EDIT.
+# format is <lastModified> <length> <SHA-1> <path>
+# Encoding is UTF-8
+1377471440000 333 977c59b76f3fdd2cb2efaadd30313c50793159fa /Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/build/res/all/debug/values-v11/values.xml
+1377471440000 1751 fc80c163b6bb37f91fa7bb3f48408b4aefdc0e24 /Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/build/res/all/debug/drawable-xhdpi/ic_launcher.png
+1377471440000 1049 11fe123431c700c66b0ab48793f3000a61c43ff9 /Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/build/res/all/debug/drawable-mdpi/ic_launcher.png
+1377471440000 702 45301f68023e69519c36b77724b8d94cab3f8459 /Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/build/res/all/debug/xml/pref_compute.xml
+1377471440000 1448 a47cd1da7f24161dfe685333cd5f1a82d5376c86 /Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/build/res/all/debug/drawable-hdpi/ic_launcher.png
+1377471440000 1635 41faeff09b29c21a91ddbe72f02678dacefd33ad /Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/build/res/all/debug/layout/activity_main.xml
+1377471440000 459 3a5508e80e0f087960d1e74cc9b190f1e6b7480d /Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/build/res/all/debug/xml/pref_notify.xml
+1377471440000 264 849630b900c6591136b952cfce2e4e7ed40b45f2 /Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/build/res/all/debug/values-sw720dp-land/values.xml
+1377471440000 361 8051ce6bebf26fda33f529fe80cdf6d7b21e8fc9 /Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/build/res/all/debug/menu/main.xml
+1377471440000 347 b493be406843f6b301191d65c6e42fbb2fde3b50 /Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/build/res/all/debug/values-v14/values.xml
+1377471440000 696 23a122aac3d4f1d995d41205d6408d8947c6b100 /Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/build/res/all/debug/xml/pref_mote.xml
+1377471440000 2917 69701313f09d0940619e4c0e88e38106c0427626 /Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/build/res/all/debug/values/values.xml
+1377471440000 2483 b3a7d1f2edc4648b2455e6926df3dd56391b36bb /Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/build/res/all/debug/drawable-xxhdpi/ic_launcher.png
+1377472738000 818 052aac557496606883a55008cc76bd76b353e433 /Users/bbotella/Documents/workspace/Android/AndroMoteProject/AndroMote/build/res/all/debug/xml/pref_headers.xml

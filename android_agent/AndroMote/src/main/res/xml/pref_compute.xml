@@ -1,0 +1,15 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+            android:key="computePermission"
+            android:title="@string/pref_compute_general"
+            android:summary="@string/pref_compute_general_description"
+            android:defaultValue="true" />
+
+    <CheckBoxPreference
+            android:key="sumFloatPermission"
+            android:title="@string/pref_mote_sum_float"
+            android:summary="@string/pref_mote_sum_float_description"
+            android:defaultValue="true" />
+
+</PreferenceScreen>
