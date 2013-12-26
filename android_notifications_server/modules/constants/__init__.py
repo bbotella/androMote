@@ -1,11 +1,12 @@
 SERVER = 'gcm.googleapis.com'
 PORT = 5235
-USERNAME = '84815785587'
-PASSWORD = 'AIzaSyCu4GJ5fW9iJ9sYRg9jQTiqCTJWFiZt914'
+USERNAME = 'GOOGLE_API_USERNAME'
+PASSWORD = 'GOOGLE_API_PASS'
 
 MAX_REPETITIONS_TIMEOUT = 40
 TIMEOUT_TIME_REPETITION=0.3
 
+#dictThreads is a dictionary to keep track of all the outgoing connections sent by the server
 dictThreads={}
 
 unacked_messages_quota = 1000

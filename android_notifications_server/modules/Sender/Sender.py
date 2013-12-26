@@ -13,7 +13,9 @@ class SendThread(threading.Thread):
     def run(self):
         self.sender.send(self.tMessage)
         self.event.wait()
+        #Once an event has been received after sending a message, we check if we were waiting for a response
         if constants.dictThreads.has_key(self.remoteFrom):
+            #If so, we update the dict
             constants.dictThreads[self.remoteFrom]['responseReceived']=True
             constants.dictThreads[self.remoteFrom]['response']=self.remoteResponse
         self.event.clear()
@@ -28,7 +30,8 @@ class SendThread(threading.Thread):
 
 class Sender:
     def __init__(self):
-        self.client = xmpp.Client('gcm.googleapis.com', debug=[])
+        #We create a xmpp client/server to communicate with the Android device
+        self.client = xmpp.Client(constants.SERVER, debug=[])
         self.client.connect(server=(constants.SERVER, constants.PORT), secure=1, use_srv=False)
         self.auth = self.client.auth(constants.USERNAME, constants.PASSWORD)
         self.senderThread = threading.Thread(target = self.iteration)
@@ -47,7 +50,7 @@ class Sender:
             gcm_json = gcm[0].getData()
             msg = json.loads(gcm_json)
             if not msg.has_key('message_type'):
-        # Acknowledge the incoming message immediately.
+                # Acknowledge the incoming message immediately.
                 self.send({'to': msg['from'],
                       'message_type': 'ack',
                       'message_id': msg['message_id']})
@@ -63,7 +66,6 @@ class Sender:
                         thread.setFrom(msg['from'])
                         event = constants.dictThreads[msg['from']]['event']
                         event.set()
-                        #constants.dictThreads.pop(msg['from'], None)
             elif msg['message_type'] == 'ack' or msg['message_type'] == 'nack':
                 constants.unacked_messages_quota += 1
     
@@ -88,9 +90,7 @@ class Sender:
     
     
     def flush_queued_messages(self):
-        #global unacked_messages_quota
         while len(constants.send_queue) and constants.unacked_messages_quota > 0:
-            #send(send_queue.pop(0))
             tMessage = constants.send_queue.pop(0)
             event=threading.Event()
             sendThread = SendThread(event, tMessage, self)
@@ -115,5 +115,3 @@ class Sender:
         while True:
             self.client.Process(1)
             self.flush_queued_messages()
-            
-    
