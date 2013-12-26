@@ -1,4 +1,4 @@
-package es.upv.pros.andromote.preferencesclassess;
+package es.upv.pros.andromote.preferencesClasses;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -10,24 +10,26 @@ import org.json.JSONObject;
 import java.util.Iterator;
 import java.util.Map;
 
-import static es.upv.pros.andromote.auxclazzess.Constants.ACCESS_PREFS_NAME;
-
 /**
  * Created by bbotella on 25/08/13.
+ *
+ * Class to manage permissions allowed by users to access mote capabilities.
  */
 public class AgentPermissionPreferences {
-    String test = ACCESS_PREFS_NAME;
+
     private SharedPreferences settings;
     private Context context;
 
     public AgentPermissionPreferences(Context context){
-        // Restore preferences
-        //this.settings = context.getSharedPreferences(ACCESS_PREFS_NAME, 0);
         this.settings = PreferenceManager.getDefaultSharedPreferences(context);
 
     }
 
-    //General getters and setters
+    //////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////
+    //////      General getters and setters         //////
+    //////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////
     public boolean getMotePermission(){
         return settings.getBoolean("motePermission", true);
     }
@@ -53,7 +55,11 @@ public class AgentPermissionPreferences {
         editor.commit();
     }
 
-    //Mote getters and setters
+    //////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////
+    //////      Mote getters and setters         //////
+    //////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////
     public boolean getGetBatteryPermission(){
         return settings.getBoolean("getBatteryPermission", true);
     }
@@ -64,7 +70,11 @@ public class AgentPermissionPreferences {
     }
 
 
-    //Compute getters and setters
+    //////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////
+    //////      Compute getters and setters         //////
+    //////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////
     public boolean getSumFloatPermission(){
         return settings.getBoolean("sumFloatPermission", true);
     }
@@ -75,9 +85,11 @@ public class AgentPermissionPreferences {
     }
 
 
-    //Notify getters and setters
-
-
+    //////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////
+    //////      Notify getters and setters         //////
+    //////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////
     public String getPreferencesAsJson(){
         JSONObject prefJson = new JSONObject();
         Map settingsMap = settings.getAll();

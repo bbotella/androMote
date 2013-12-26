@@ -33,6 +33,10 @@ public abstract class AbstractAgentHandler extends Activity implements IAgentHan
 
     }
 
+    public void handleAckMessage(){
+
+    }
+
     public String getFrom() {
         return from;
     }

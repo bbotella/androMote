@@ -6,10 +6,10 @@ import android.content.Context;
 import java.util.Hashtable;
 
 import es.upv.pros.andromote.agenthandlersabstracts.AbstractAgentHandler;
-import es.upv.pros.andromote.computateworkers.SumHandler;
+import es.upv.pros.andromote.computeworkers.SumHandler;
 import es.upv.pros.andromote.gcmcommunication.MessageSender;
 import es.upv.pros.andromote.jsonclassess.ServerPayload;
-import es.upv.pros.andromote.preferencesclassess.AgentPermissionPreferences;
+import es.upv.pros.andromote.preferencesClasses.AgentPermissionPreferences;
 
 import static es.upv.pros.andromote.auxclazzess.Constants.OPERATION_NOT_ALLOWED_CODE;
 import static es.upv.pros.andromote.auxclazzess.Constants.SENDER_ID;
@@ -17,13 +17,13 @@ import static es.upv.pros.andromote.auxclazzess.Constants.SENDER_ID;
 /**
  * Created by bbotella on 21/08/13.
  */
-public class ComputateHandler extends AbstractAgentHandler {
+public class ComputeHandler extends AbstractAgentHandler {
 
     private ServerPayload payload;
     private Context context;
     private AgentPermissionPreferences preferences;
 
-    public ComputateHandler(ServerPayload payload, Context context){
+    public ComputeHandler(ServerPayload payload, Context context){
         super(payload, context);
         this.payload=payload;
         this.context = context;
@@ -45,6 +45,7 @@ public class ComputateHandler extends AbstractAgentHandler {
     }
 
     private void handleSumFloat(){
+        //Dumb implementation of a method to sum two variables received in payload
         Hashtable<String, Object> params = payload.getParameters();
         float num1 = Float.parseFloat((String) params.get("num1"));
         float num2 = Float.parseFloat((String) params.get("num2"));
@@ -57,9 +58,4 @@ public class ComputateHandler extends AbstractAgentHandler {
         MessageSender sender = new MessageSender(SENDER_ID, result, context);
         sender.sendMessage();
     }
-
-    private void handleAckMessage(){
-
-    }
-
 }

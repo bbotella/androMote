@@ -34,7 +34,7 @@ public class MessageSender {
 
     public void sendMessage(){
         ArrayList<String> passing = new ArrayList<String>();
-
+        //Using JSON for payload string
         JSONObject messageJson = new JSONObject();
         Enumeration e = this.values.keys();
         String key;
@@ -52,6 +52,8 @@ public class MessageSender {
 
         passing.add(this.to);
         passing.add(message);
+
+        //We send the message in a separated thread
         new AsyncTask<ArrayList<String>, Void, String>() {
             @Override
             protected String doInBackground(ArrayList<String>... params) {
@@ -76,7 +78,7 @@ public class MessageSender {
 
             @Override
             protected void onPostExecute(String result) {
-                //mDisplay.append(msg + "\n");
+                Log.d(TAG, result);
             }
         }.execute(passing);
     }

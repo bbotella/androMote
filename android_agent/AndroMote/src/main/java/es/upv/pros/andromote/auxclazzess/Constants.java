@@ -4,7 +4,7 @@ package es.upv.pros.andromote.auxclazzess;
  * Created by bbotella on 24/08/13.
  */
 public final class Constants {
-    public static final String SENDER_ID = "84815785587";
+    public static final String SENDER_ID = "SENDER_ID";
     public static final String TAG = "AndroMote";
     public static final int NOTIFICATION_ID = 1;
     public static final String ACCESS_PREFS_NAME = "AccessPreferences";

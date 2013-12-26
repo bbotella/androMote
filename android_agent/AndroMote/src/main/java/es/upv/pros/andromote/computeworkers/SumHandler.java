@@ -1,4 +1,4 @@
-package es.upv.pros.andromote.computateworkers;
+package es.upv.pros.andromote.computeworkers;
 
 /**
  * Created by bbotella on 24/08/13.

@@ -9,7 +9,7 @@ import es.upv.pros.andromote.agenthandlersabstracts.AbstractAgentHandler;
 import es.upv.pros.andromote.gcmcommunication.MessageSender;
 import es.upv.pros.andromote.jsonclassess.ServerPayload;
 import es.upv.pros.andromote.moteWorkers.BatteryGetter;
-import es.upv.pros.andromote.preferencesclassess.AgentPermissionPreferences;
+import es.upv.pros.andromote.preferencesClasses.AgentPermissionPreferences;
 
 import  static es.upv.pros.andromote.auxclazzess.Constants.*;
 
@@ -53,9 +53,4 @@ public class MoteHandler extends AbstractAgentHandler {
         MessageSender sender = new MessageSender(SENDER_ID, result, context);
         sender.sendMessage();
     }
-
-    private void handleAckMessage(){
-
-    }
-
 }

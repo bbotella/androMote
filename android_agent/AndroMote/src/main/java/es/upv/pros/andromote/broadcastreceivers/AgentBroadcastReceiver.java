@@ -13,12 +13,11 @@ import es.upv.pros.andromote.services.MessageHandlerIntentService;
  */
 
 public class AgentBroadcastReceiver extends WakefulBroadcastReceiver {
+    //Using Android receiver patterns
     @Override
     public void onReceive(Context context, Intent intent) {
-        // Explicitly specify that GcmIntentService will handle the intent.
         ComponentName comp = new ComponentName(context.getPackageName(),
                 MessageHandlerIntentService.class.getName());
-        // Start the service, keeping the device awake while it is launching.
         startWakefulService(context, (intent.setComponent(comp)));
         setResultCode(Activity.RESULT_OK);
     }
