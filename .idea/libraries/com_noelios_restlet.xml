@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="com.noelios.restlet">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/AndroMote/libs/com.noelios.restlet.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
