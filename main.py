@@ -42,6 +42,56 @@ def getBattery():
         return resp
     else:
         return '{"exitCode":-1, "msg":"Device not registered"}'
+    
+    
+@app.route('/mote/getTemperature', methods=['POST'])
+def getTemperature():
+    destination = request.form['moteId']
+    sender.sendMessage(destination, '{"operation_type": "mote", "operation": "getTemperature", "parameters":[]}')
+    i=0
+    while not constants.dictThreads.has_key(destination):
+        time.sleep(constants.TIMEOUT_TIME_REPETITION)
+        i=i+1
+        if i==constants.MAX_REPETITIONS_TIMEOUT:
+            return '{"exitCode":-2, "msg":"Sending thread not working"}'
+    i=0
+    if constants.dictThreads.has_key(destination):
+        while constants.dictThreads[destination]['responseReceived']==False:
+            time.sleep(constants.TIMEOUT_TIME_REPETITION)
+            i=i+1
+            if i==constants.MAX_REPETITIONS_TIMEOUT:
+                constants.dictThreads.pop(destination, None)
+                return '{"exitCode":-3, "msg":"Timeout waiting answer"}'
+        resp = constants.dictThreads[destination]['response']
+        constants.dictThreads.pop(destination, None)
+        return resp
+    else:
+        return '{"exitCode":-1, "msg":"Device not registered"}'
+    
+    
+@app.route('/mote/getPreassure', methods=['POST'])
+def getPreassure():
+    destination = request.form['moteId']
+    sender.sendMessage(destination, '{"operation_type": "mote", "operation": "getPreassure", "parameters":[]}')
+    i=0
+    while not constants.dictThreads.has_key(destination):
+        time.sleep(constants.TIMEOUT_TIME_REPETITION)
+        i=i+1
+        if i==constants.MAX_REPETITIONS_TIMEOUT:
+            return '{"exitCode":-2, "msg":"Sending thread not working"}'
+    i=0
+    if constants.dictThreads.has_key(destination):
+        while constants.dictThreads[destination]['responseReceived']==False:
+            time.sleep(constants.TIMEOUT_TIME_REPETITION)
+            i=i+1
+            if i==constants.MAX_REPETITIONS_TIMEOUT:
+                constants.dictThreads.pop(destination, None)
+                return '{"exitCode":-3, "msg":"Timeout waiting answer"}'
+        resp = constants.dictThreads[destination]['response']
+        constants.dictThreads.pop(destination, None)
+        return resp
+    else:
+        return '{"exitCode":-1, "msg":"Device not registered"}'
 
 
 ################################################################################################################
